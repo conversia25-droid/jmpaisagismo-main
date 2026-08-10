@@ -1,0 +1,110 @@
+﻿[
+    {
+        "order":  1,
+        "client":  "Projeto Hexágono - Samarco",
+        "location":  "Projeto Hexágono",
+        "title":  "Termino Das Instalações Da Válvula Fechamento Das Valas Dos Tubo",
+        "score":  54.99,
+        "source":  "PROJETO HEXAGONO - SAMARCO\\CAMPO DE NOVO SOBERBO - SANTA CRUZ DO ESCALVADO\\2025\\Termino das instalações da válvula fechamento das valas dos tubo\\WhatsApp Image 2025-09-29 at 08.46.57 (2).jpeg",
+        "output":  "/clientes-real/01-projeto-hexagono-samarco-termino-das-instalacoes-da-valvula-fechamento-das-valas-dos-tubo-1.jpg"
+    },
+    {
+        "order":  2,
+        "client":  "Projeto Hexágono - Samarco",
+        "location":  "Projeto Hexágono",
+        "title":  "Campo De Novo Soberbo Santa Cruz Do Escalvado",
+        "score":  54.99,
+        "source":  "PROJETO HEXAGONO - SAMARCO\\CAMPO DE NOVO SOBERBO - SANTA CRUZ DO ESCALVADO\\2026\\Março\\23-03-2026\\WhatsApp Image 2026-03-23 at 17.19.32.jpeg",
+        "output":  "/clientes-real/02-projeto-hexagono-samarco-campo-de-novo-soberbo-santa-cruz-do-escalvado-2.jpg"
+    },
+    {
+        "order":  3,
+        "client":  "Prefeitura De Taquaraçu De Minas",
+        "location":  "Taquaraçu de Minas, MG",
+        "title":  "Jardim 22 07 2024",
+        "score":  36.51,
+        "source":  "PREFEITURA DE TAQUARAÇU DE MINAS\\JARDIM 22-07-2024\\WhatsApp Image 2024-07-22 at 09.23.58 (1).jpeg",
+        "output":  "/clientes-real/03-prefeitura-de-taquaracu-de-minas-jardim-22-07-2024-3.jpg"
+    },
+    {
+        "order":  4,
+        "client":  "Prefeitura De Diamantina",
+        "location":  "Diamantina, MG",
+        "title":  "Corte E Supressão De Árvores",
+        "score":  54.99,
+        "source":  "PREFEITURA DE DIAMANTINA\\2026\\CORTE E SUPRESSÃO DE ÁRVORES\\Janeiro\\26-01-2026\\WhatsApp Image 2026-01-26 at 15.30.37.jpeg",
+        "output":  "/clientes-real/04-prefeitura-de-diamantina-corte-e-supressao-de-arvores-4.jpg"
+    },
+    {
+        "order":  5,
+        "client":  "Prefeitura De Diamantina",
+        "location":  "Diamantina, MG",
+        "title":  "Corte E Supressão De Árvores",
+        "score":  44.51,
+        "source":  "PREFEITURA DE DIAMANTINA\\2025\\NOVEMBRO\\CORTE E SUPRESSÃO DE ÁRVORES\\24-11-2025\\WhatsApp Image 2025-11-24 at 15.40.43.jpeg",
+        "output":  "/clientes-real/05-prefeitura-de-diamantina-corte-e-supressao-de-arvores-5.jpg"
+    },
+    {
+        "order":  6,
+        "client":  "Praça Nossa Senhora Da Conceição",
+        "location":  "Praça Nossa Senhora da Conceição",
+        "title":  "Registro do cliente",
+        "score":  54.99,
+        "source":  "PRAÇA NOSSA SENHORA DA CONCEIÇÃO\\JULHO\\01-07-2026\\WhatsApp Image 2026-07-01 at 13.25.12.jpeg",
+        "output":  "/clientes-real/06-praca-nossa-senhora-da-conceicao-registro-do-cliente-6.jpg"
+    },
+    {
+        "order":  7,
+        "client":  "Praça Nossa Senhora Da Conceição",
+        "location":  "Praça Nossa Senhora da Conceição",
+        "title":  "Registro do cliente",
+        "score":  44.51,
+        "source":  "PRAÇA NOSSA SENHORA DA CONCEIÇÃO\\JULHO\\02-07-2026\\WhatsApp Image 2026-07-02 at 18.23.54.jpeg",
+        "output":  "/clientes-real/07-praca-nossa-senhora-da-conceicao-registro-do-cliente-7.jpg"
+    },
+    {
+        "order":  8,
+        "client":  "MRV",
+        "location":  "Cliente corporativo",
+        "title":  "Sede",
+        "score":  54.99,
+        "source":  "MRV\\Sede\\2025\\Junho\\WhatsApp Image 2025-06-03 at 14.49.13.jpeg",
+        "output":  "/clientes-real/08-mrv-sede-8.jpg"
+    },
+    {
+        "order":  9,
+        "client":  "MRV",
+        "location":  "Cliente corporativo",
+        "title":  "Sede",
+        "score":  54.99,
+        "source":  "MRV\\Sede\\2025\\Maio\\WhatsApp Image 2025-05-27 at 14.09.44.jpeg",
+        "output":  "/clientes-real/09-mrv-sede-9.jpg"
+    },
+    {
+        "order":  10,
+        "client":  "IURD",
+        "location":  "Cliente institucional",
+        "title":  "Catedral Bh",
+        "score":  54.99,
+        "source":  "IURD\\Catedral BH\\2025\\Fevereiro\\28-02-2025\\WhatsApp Image 2025-02-28 at 16.40.57.jpeg",
+        "output":  "/clientes-real/10-iurd-catedral-bh-10.jpg"
+    },
+    {
+        "order":  11,
+        "client":  "IURD",
+        "location":  "Cliente institucional",
+        "title":  "Catedral Bh",
+        "score":  54.99,
+        "source":  "IURD\\Catedral BH\\2025\\Fevereiro\\27-02-2025\\WhatsApp Image 2025-02-27 at 14.27.17.jpeg",
+        "output":  "/clientes-real/11-iurd-catedral-bh-11.jpg"
+    },
+    {
+        "order":  12,
+        "client":  "Associação Atlética Banco Do Brasil Curvelo",
+        "location":  "Curvelo, MG",
+        "title":  "Registro do cliente",
+        "score":  54.99,
+        "source":  "ASSOCIAÇÃO ATLÉTICA BANCO DO BRASIL - CURVELO\\2026\\JULHO\\10-07-2026\\WhatsApp Image 2026-07-11 at 06.41.58 (2).jpeg",
+        "output":  "/clientes-real/12-associacao-atletica-banco-do-brasil-curvelo-registro-do-cliente-12.jpg"
+    }
+]

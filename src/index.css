@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 155 25% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 155 25% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 155 25% 12%;
+
+    --primary: 152 62% 30%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 145 70% 47%;
+
+    --secondary: 150 40% 96%;
+    --secondary-foreground: 152 62% 22%;
+
+    --muted: 150 20% 96%;
+    --muted-foreground: 155 10% 42%;
+
+    --accent: 145 70% 47%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 150 18% 90%;
+    --input: 150 18% 90%;
+    --ring: 145 70% 47%;
+
+    --radius: 1rem;
+
+    --hero-overlay: linear-gradient(160deg, hsla(155, 60%, 10%, 0.92) 0%, hsla(152, 62%, 20%, 0.85) 45%, hsla(145, 65%, 30%, 0.75) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(152 62% 30%) 0%, hsl(145 70% 45%) 100%);
+    --gradient-soft: linear-gradient(180deg, hsl(150 40% 98%) 0%, hsl(150 35% 95%) 100%);
+    --card-shadow: 0 4px 24px -6px hsla(155, 40%, 15%, 0.10);
+    --card-hover-shadow: 0 20px 48px -16px hsla(152, 55%, 20%, 0.28);
+    --glow-shadow: 0 12px 32px -10px hsla(145, 70%, 40%, 0.5);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 155 30% 7%;
+    --foreground: 150 15% 94%;
+    --card: 155 25% 11%;
+    --card-foreground: 150 15% 94%;
+    --popover: 155 25% 11%;
+    --popover-foreground: 150 15% 94%;
+    --primary: 145 60% 42%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 145 70% 55%;
+    --secondary: 155 20% 16%;
+    --secondary-foreground: 150 15% 94%;
+    --muted: 155 18% 16%;
+    --muted-foreground: 150 10% 62%;
+    --accent: 145 65% 48%;
+    --accent-foreground: 155 30% 7%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 155 15% 20%;
+    --input: 155 15% 20%;
+    --ring: 145 65% 48%;
+    --gradient-soft: linear-gradient(180deg, hsl(155 30% 8%) 0%, hsl(155 28% 10%) 100%);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .hero-overlay {
+    background: var(--hero-overlay);
+  }
+
+  .section-gradient {
+    background: var(--gradient-soft);
+  }
+
+  .dot-pattern {
+    background-image: radial-gradient(hsl(var(--primary) / 0.07) 1.5px, transparent 1.5px);
+    background-size: 40px 40px;
+  }
+
+  .card-shadow {
+    box-shadow: var(--card-shadow);
+  }
+
+  .card-hover-shadow {
+    box-shadow: var(--card-hover-shadow);
+  }
+
+  .glow-shadow {
+    box-shadow: var(--glow-shadow);
+  }
+
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+
+  .text-highlight {
+    color: hsl(var(--primary-glow));
+  }
+
+  .text-gradient {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+@keyframes service-marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.service-marquee-wrap {
+  -webkit-mask-image: linear-gradient(90deg, transparent, black 6%, black 94%, transparent);
+  mask-image: linear-gradient(90deg, transparent, black 6%, black 94%, transparent);
+}
+
+.service-marquee-track {
+  animation: service-marquee 44s linear infinite;
+}
+
+.service-marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .service-marquee-track {
+    animation: none;
+  }
+}
