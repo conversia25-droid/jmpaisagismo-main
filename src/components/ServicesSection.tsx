@@ -1,13 +1,9 @@
-﻿import { ArrowRight, Droplets, Hammer, Leaf, Scissors, Trees, X } from "lucide-react";
+import { ArrowRight, Droplets, Hammer, Leaf, Scissors, Trees, X } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-import serviceConstrucao from "@/assets/service-construcao.jpg";
-import serviceGramados from "@/assets/service-gramados.jpg";
-import serviceJardins from "@/assets/service-jardins.jpg";
-import serviceLimpeza from "@/assets/service-limpeza.jpg";
-import servicePoda from "@/assets/service-poda.jpg";
 import type { PortfolioCategory } from "@/data/portfolioItems";
+import { publicPath } from "@/lib/publicPath";
 
 const services: {
   icon: typeof Hammer;
@@ -18,42 +14,42 @@ const services: {
 }[] = [
   {
     icon: Hammer,
-    title: "Construção Civil",
+    title: "Constru\u00e7\u00e3o Civil",
     description:
-      "Execução de projetos de construção e reforma civil para áreas verdes, praças, jardins e espaços urbanos com qualidade e planejamento.",
-    image: serviceConstrucao,
+      "Execu\u00e7\u00e3o de projetos de constru\u00e7\u00e3o e reforma civil para \u00e1reas verdes, pra\u00e7as, jardins e espa\u00e7os urbanos com qualidade e planejamento.",
+    image: publicPath("/portfolio-real/construcao/03-construcao-colocando-os-tubos-nas-valas-3.jpg"),
     category: "construcao",
   },
   {
     icon: Leaf,
-    title: "Manutenção de Jardins",
+    title: "Manuten\u00e7\u00e3o de Jardins",
     description:
-      "Cuidamos do seu jardim com podas regulares, adubação e controle de pragas para manter a beleza o ano todo.",
-    image: serviceJardins,
+      "Cuidamos do seu jardim com podas regulares, aduba\u00e7\u00e3o e controle de pragas para manter a beleza o ano todo.",
+    image: publicPath("/portfolio-real/jardins/06-jardins-jardim-municipal-taquaracu.jpg"),
     category: "jardins",
   },
   {
     icon: Droplets,
     title: "Gramados Esportivos",
     description:
-      "Implantação, recuperação e manutenção de gramados para campos esportivos com padrão profissional.",
-    image: serviceGramados,
+      "Implanta\u00e7\u00e3o, recupera\u00e7\u00e3o e manuten\u00e7\u00e3o de gramados para campos esportivos com padr\u00e3o profissional.",
+    image: publicPath("/portfolio-real/gramados/07-gramados-campo-de-novo-soberbo-santa-cruz-do-escalvado-7.jpg"),
     category: "gramados",
   },
   {
     icon: Trees,
     title: "Limpeza Urbana",
     description:
-      "Capina, roçagem, varrição, pintura de meio-fio, lavagem de vias e coleta de entulho vegetal e civil.",
-    image: serviceLimpeza,
+      "Capina, ro\u00e7agem, varri\u00e7\u00e3o, pintura de meio-fio, lavagem de vias e coleta de entulho vegetal e civil.",
+    image: publicPath("/portfolio-real/limpeza/03-limpeza-limpeza-urbana-3.jpg"),
     category: "limpeza",
   },
   {
     icon: Scissors,
-    title: "Poda de Árvores",
+    title: "Poda de \u00c1rvores",
     description:
-      "Poda técnica, supressão e transplante de árvores com equipe especializada e equipamentos adequados.",
-    image: servicePoda,
+      "Poda t\u00e9cnica, supress\u00e3o e transplante de \u00e1rvores com equipe especializada e equipamentos adequados.",
+    image: publicPath("/portfolio-real/poda/02-poda-corte-e-supressao-de-arvores-2.jpg"),
     category: "poda",
   },
 ];
@@ -70,11 +66,10 @@ const ServicesSection = () => {
               O que fazemos
             </span>
             <h2 className="font-display text-3xl md:text-5xl font-extrabold tracking-tight text-foreground mt-5">
-              Nossos <span className="text-highlight">Serviços</span>
+              Nossos <span className="text-highlight">Servi\u00e7os</span>
             </h2>
             <p className="font-body text-muted-foreground mt-4">
-              Soluções completas em construção civil, paisagismo e conservação para empresas,
-              condomínios e órgãos públicos.
+              {"Solu\u00e7\u00f5es completas em constru\u00e7\u00e3o civil, paisagismo e conserva\u00e7\u00e3o para empresas, condom\u00ednios e \u00f3rg\u00e3os p\u00fablicos."}
             </p>
           </div>
 
@@ -121,17 +116,16 @@ const ServicesSection = () => {
 
             <div className="rounded-3xl gradient-primary p-8 flex flex-col justify-center glow-shadow">
               <h3 className="font-display text-2xl font-extrabold text-primary-foreground mb-3">
-                Precisa de algo específico?
+                {"Precisa de algo espec\u00edfico?"}
               </h3>
               <p className="font-body text-sm text-primary-foreground/85 mb-6">
-                Montamos um plano sob medida para a sua área verde ou obra. Fale com a nossa
-                equipe e receba um orçamento sem compromisso.
+                {"Montamos um plano sob medida para a sua \u00e1rea verde ou obra. Fale com a nossa equipe e receba um or\u00e7amento sem compromisso."}
               </p>
               <Link
                 to="/contato"
                 className="inline-flex items-center gap-2 self-start rounded-full bg-primary-foreground px-6 py-3 font-body font-semibold text-primary hover:opacity-90 transition-opacity"
               >
-                Solicitar Orçamento
+                {"Solicitar Or\u00e7amento"}
                 <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
