@@ -1,4 +1,4 @@
-﻿import { fireEvent, render, screen } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import App from "@/App";
 
@@ -19,6 +19,15 @@ describe("JM Paisagismo site", () => {
     expect(screen.getByRole("heading", { name: /fotos reais passando pela tela/i })).toBeInTheDocument();
   });
 
+  it("opens the contact phone card in WhatsApp", () => {
+    window.history.pushState({}, "", "/contato");
+
+    render(<App />);
+
+    const phoneCard = screen.getByRole("link", { name: /telefone \/ whatsapp/i });
+    expect(phoneCard).toHaveAttribute("href", expect.stringContaining("https://wa.me/5531990635460"));
+    expect(phoneCard).toHaveAttribute("target", "_blank");
+  });
   it("prepares a WhatsApp message from the contact form", () => {
     window.history.pushState({}, "", "/contato");
     const open = vi.spyOn(window, "open").mockImplementation(() => null);
