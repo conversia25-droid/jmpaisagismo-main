@@ -1,4 +1,4 @@
-﻿import { useState } from "react";
+import { useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { MapPin, X, ZoomIn } from "lucide-react";
 
@@ -8,6 +8,7 @@ import {
   serviceFilters,
   type PortfolioCategory,
 } from "@/data/portfolioItems";
+import { publicPath } from "@/lib/publicPath";
 
 type PortfolioFilter = PortfolioCategory | "todos";
 
@@ -101,7 +102,7 @@ const PortfolioSection = () => {
               aria-label={`Ampliar foto: ${project.title}`}
             >
               <img
-                src={project.image}
+                src={publicPath(project.image)}
                 alt={project.alt}
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 loading="lazy"
@@ -168,7 +169,7 @@ const PortfolioSection = () => {
                 aria-label={`Ampliar foto do cliente ${photo.client}`}
               >
                 <img
-                  src={photo.image}
+                  src={publicPath(photo.image)}
                   alt={photo.alt}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   loading="lazy"
@@ -206,7 +207,7 @@ const PortfolioSection = () => {
           </button>
           <div className="max-w-5xl w-full animate-scale-in" onClick={(event) => event.stopPropagation()}>
             <img
-              src={lightbox.image}
+              src={publicPath(lightbox.image)}
               alt={lightbox.alt}
               className="w-full h-auto max-h-[80vh] object-contain rounded-lg"
             />

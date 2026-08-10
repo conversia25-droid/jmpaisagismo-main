@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
+import { publicPath } from "@/lib/publicPath";
+
 const showcaseItems = [
   {
     service: "Gramados Esportivos",
@@ -87,7 +89,7 @@ const HomeShowcase = () => {
               aria-label={`Ver fotos de ${item.service}`}
             >
               <img
-                src={item.image}
+                src={publicPath(item.image)}
                 alt={`${item.service} - ${item.title}`}
                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                 loading={index < showcaseItems.length ? "eager" : "lazy"}
