@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 import type { PortfolioCategory } from "@/data/portfolioItems";
+import serviceConstrucao from "@/assets/service-construcao.jpg";
 import { publicPath } from "@/lib/publicPath";
 
 const services: {
@@ -17,7 +18,7 @@ const services: {
     title: "Constru\u00e7\u00e3o Civil",
     description:
       "Execu\u00e7\u00e3o de projetos de constru\u00e7\u00e3o e reforma civil para \u00e1reas verdes, pra\u00e7as, jardins e espa\u00e7os urbanos com qualidade e planejamento.",
-    image: publicPath("/portfolio-real/construcao/03-construcao-colocando-os-tubos-nas-valas-3.jpg"),
+    image: serviceConstrucao,
     category: "construcao",
   },
   {

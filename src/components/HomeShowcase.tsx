@@ -17,10 +17,10 @@ const showcaseItems = [
     href: "/portfolio?servico=jardins",
   },
   {
-    service: "Constru\u00e7\u00e3o Civil",
-    title: "Infraestrutura para pra\u00e7as e campos",
+    service: "Irriga\u00e7\u00e3o",
+    title: "Tubula\u00e7\u00e3o e valas de irriga\u00e7\u00e3o",
     image: "/portfolio-real/construcao/03-construcao-colocando-os-tubos-nas-valas-3.jpg",
-    href: "/portfolio?servico=construcao",
+    href: "/portfolio?servico=irrigacao",
   },
   {
     service: "Limpeza Urbana",

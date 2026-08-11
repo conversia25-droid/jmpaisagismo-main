@@ -22,12 +22,12 @@ export const serviceFilters: readonly { id: PortfolioCategory; label: string }[]
 export const portfolioItems: readonly PortfolioItem[] = [
     {
         "title":  "Término das instalações da válvula e fechamento das valas dos tubos",
-        "category":  "construcao",
-        "service":  "Construção Civil",
+        "category":  "irrigacao",
+        "service":  "Irriga\u00e7\u00e3o",
         "client":  "Projeto Hexágono - Samarco",
         "location":  "Projeto Hexágono",
         "image":  "/portfolio-real/construcao/01-construcao-termino-das-instalacoes-da-valvula-fechamento-das-valas-dos-tubo-1.jpg",
-        "alt":  "Construção Civil - Término das instalações da válvula e fechamento das valas dos tubos - Projeto Hexágono - Samarco"
+        "alt":  "Irriga\u00e7\u00e3o - Término das instalações da válvula e fechamento das valas dos tubos - Projeto Hexágono - Samarco"
     },
     {
         "title":  "Início da irrigação",
@@ -40,12 +40,12 @@ export const portfolioItems: readonly PortfolioItem[] = [
     },
     {
         "title":  "Colocação dos tubos nas valas",
-        "category":  "construcao",
-        "service":  "Construção Civil",
+        "category":  "irrigacao",
+        "service":  "Irriga\u00e7\u00e3o",
         "client":  "Projeto Hexágono - Samarco",
         "location":  "Projeto Hexágono",
         "image":  "/portfolio-real/construcao/03-construcao-colocando-os-tubos-nas-valas-3.jpg",
-        "alt":  "Construção Civil - Colocação dos tubos nas valas - Projeto Hexágono - Samarco"
+        "alt":  "Irriga\u00e7\u00e3o - Colocação dos tubos nas valas - Projeto Hexágono - Samarco"
     },
     {
         "title":  "Serviço de drenagem, limpeza do gramado e fechamento dos drenos",
@@ -67,21 +67,21 @@ export const portfolioItems: readonly PortfolioItem[] = [
     },
     {
         "title":  "Colocação dos tubos nas valas",
-        "category":  "construcao",
-        "service":  "Construção Civil",
+        "category":  "irrigacao",
+        "service":  "Irriga\u00e7\u00e3o",
         "client":  "Projeto Hexágono - Samarco",
         "location":  "Projeto Hexágono",
         "image":  "/portfolio-real/construcao/06-construcao-colocando-os-tubos-nas-valas-6.jpg",
-        "alt":  "Construção Civil - Colocação dos tubos nas valas - Projeto Hexágono - Samarco"
+        "alt":  "Irriga\u00e7\u00e3o - Colocação dos tubos nas valas - Projeto Hexágono - Samarco"
     },
     {
         "title":  "Marcação das valas",
-        "category":  "construcao",
-        "service":  "Construção Civil",
+        "category":  "irrigacao",
+        "service":  "Irriga\u00e7\u00e3o",
         "client":  "Prefeitura de Rio Doce",
         "location":  "Rio Doce, MG",
         "image":  "/portfolio-real/construcao/07-construcao-marcacao-das-valas-7.jpg",
-        "alt":  "Construção Civil - Marcação das valas - Prefeitura de Rio Doce"
+        "alt":  "Irriga\u00e7\u00e3o - Marcação das valas - Prefeitura de Rio Doce"
     },
     {
         "title":  "Irrigação do campo",
