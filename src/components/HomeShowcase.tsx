@@ -18,8 +18,8 @@ const showcaseItems = [
   },
   {
     service: "Irriga\u00e7\u00e3o",
-    title: "Tubula\u00e7\u00e3o e valas de irriga\u00e7\u00e3o",
-    image: "/portfolio-real/construcao/03-construcao-colocando-os-tubos-nas-valas-3.jpg",
+    title: "Irriga\u00e7\u00e3o para gramados esportivos",
+    image: "/portfolio-real/construcao/05-construcao-irrigacao-campo-5.jpg",
     href: "/portfolio?servico=irrigacao",
   },
   {
@@ -49,7 +49,7 @@ const showcaseItems = [
   {
     service: "Irriga\u00e7\u00e3o",
     title: "Sistemas de irriga\u00e7\u00e3o para campos",
-    image: "/portfolio-real/construcao/02-construcao-inicio-da-irrigacao-2.jpg",
+    image: "/portfolio-real/construcao/08-construcao-irrigacao-campo-8.jpg",
     href: "/portfolio?servico=irrigacao",
   },
 ] as const;
