@@ -1,4 +1,4 @@
-﻿import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Mail, MapPin, Phone } from "lucide-react";
 
 import logo from "@/assets/logo-jm.png";
@@ -49,7 +49,7 @@ const Footer = () => {
               {serviceFilters.map((service) => (
                 <li key={service.id}>
                   <Link
-                    to={`/portfolio?servico=${service.id}`}
+                    to={`/portfolio?servico=${service.id}#portfolio`}
                     className="font-body text-sm text-background/60 hover:text-primary-glow transition-colors"
                   >
                     {service.label}
