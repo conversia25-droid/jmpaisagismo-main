@@ -26,7 +26,7 @@ const services: {
     title: "Irriga\u00e7\u00e3o",
     description:
       "Instala\u00e7\u00e3o, manuten\u00e7\u00e3o e ajustes de sistemas de irriga\u00e7\u00e3o para campos, gramados e \u00e1reas verdes.",
-    image: publicPath("/portfolio-real/construcao/05-construcao-irrigacao-campo-5.jpg"),
+    image: publicPath("/portfolio-real/irrigacao/05-irrigacao-campo.jpg"),
     category: "irrigacao",
   },
   {

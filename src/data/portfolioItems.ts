@@ -21,76 +21,148 @@ export const serviceFilters: readonly { id: PortfolioCategory; label: string }[]
 
 export const portfolioItems: readonly PortfolioItem[] = [
     {
-        "title":  "Término das instalações da válvula e fechamento das valas dos tubos",
+        "title":  "Obra civil da praça",
+        "category":  "construcao",
+        "service":  "Construção Civil",
+        "client":  "Praça Nossa Senhora da Conceição",
+        "location":  "Minas Gerais",
+        "image":  "/portfolio-real/construcao/01-construcao-obra-praca-retroescavadeira.jpg",
+        "alt":  "Construção Civil - Obra civil da praça - Praça Nossa Senhora da Conceição"
+    },
+    {
+        "title":  "Estrutura e formas da praça",
+        "category":  "construcao",
+        "service":  "Construção Civil",
+        "client":  "Praça Nossa Senhora da Conceição",
+        "location":  "Minas Gerais",
+        "image":  "/portfolio-real/construcao/02-construcao-formas-estrutura-praca.jpg",
+        "alt":  "Construção Civil - Estrutura e formas da praça - Praça Nossa Senhora da Conceição"
+    },
+    {
+        "title":  "Mureta e base de concreto",
+        "category":  "construcao",
+        "service":  "Construção Civil",
+        "client":  "Praça Nossa Senhora da Conceição",
+        "location":  "Minas Gerais",
+        "image":  "/portfolio-real/construcao/03-construcao-mureta-base-concreto.jpg",
+        "alt":  "Construção Civil - Mureta e base de concreto - Praça Nossa Senhora da Conceição"
+    },
+    {
+        "title":  "Nivelamento do terreno",
+        "category":  "construcao",
+        "service":  "Construção Civil",
+        "client":  "Praça Nossa Senhora da Conceição",
+        "location":  "Minas Gerais",
+        "image":  "/portfolio-real/construcao/04-construcao-nivelamento-terreno.jpg",
+        "alt":  "Construção Civil - Nivelamento do terreno - Praça Nossa Senhora da Conceição"
+    },
+    {
+        "title":  "Execução dos passeios",
+        "category":  "construcao",
+        "service":  "Construção Civil",
+        "client":  "Praça Nossa Senhora da Conceição",
+        "location":  "Minas Gerais",
+        "image":  "/portfolio-real/construcao/05-construcao-passeios-praca.jpg",
+        "alt":  "Construção Civil - Execução dos passeios - Praça Nossa Senhora da Conceição"
+    },
+    {
+        "title":  "Concretagem da praça",
+        "category":  "construcao",
+        "service":  "Construção Civil",
+        "client":  "Praça Nossa Senhora da Conceição",
+        "location":  "Minas Gerais",
+        "image":  "/portfolio-real/construcao/06-construcao-concretagem-praca.jpg",
+        "alt":  "Construção Civil - Concretagem da praça - Praça Nossa Senhora da Conceição"
+    },
+    {
+        "title":  "Acabamento de piso",
+        "category":  "construcao",
+        "service":  "Construção Civil",
+        "client":  "Praça Nossa Senhora da Conceição",
+        "location":  "Minas Gerais",
+        "image":  "/portfolio-real/construcao/07-construcao-acabamento-piso.jpg",
+        "alt":  "Construção Civil - Acabamento de piso - Praça Nossa Senhora da Conceição"
+    },
+    {
+        "title":  "Acabamento final da praça",
+        "category":  "construcao",
+        "service":  "Construção Civil",
+        "client":  "Praça Nossa Senhora da Conceição",
+        "location":  "Minas Gerais",
+        "image":  "/portfolio-real/construcao/08-construcao-piso-intertravado-acabamentos.jpg",
+        "alt":  "Construção Civil - Acabamento final da praça - Praça Nossa Senhora da Conceição"
+    },
+    {
+        "title":  "Instalação de válvula e fechamento de valas",
         "category":  "irrigacao",
-        "service":  "Irriga\u00e7\u00e3o",
+        "service":  "Irrigação",
         "client":  "Projeto Hexágono - Samarco",
         "location":  "Projeto Hexágono",
-        "image":  "/portfolio-real/construcao/01-construcao-termino-das-instalacoes-da-valvula-fechamento-das-valas-dos-tubo-1.jpg",
-        "alt":  "Irriga\u00e7\u00e3o - Término das instalações da válvula e fechamento das valas dos tubos - Projeto Hexágono - Samarco"
+        "image":  "/portfolio-real/irrigacao/01-irrigacao-instalacao-valvula-fechamento-valas.jpg",
+        "alt":  "Irrigação - Instalação de válvula e fechamento de valas - Projeto Hexágono - Samarco"
     },
     {
         "title":  "Início da irrigação",
         "category":  "irrigacao",
-        "service":  "Irriga\u00e7\u00e3o",
+        "service":  "Irrigação",
         "client":  "Prefeitura de Rio Doce",
         "location":  "Rio Doce, MG",
-        "image":  "/portfolio-real/construcao/02-construcao-inicio-da-irrigacao-2.jpg",
-        "alt":  "Irriga\u00e7\u00e3o - Início da irrigação - Prefeitura de Rio Doce"
+        "image":  "/portfolio-real/irrigacao/02-irrigacao-inicio-da-irrigacao.jpg",
+        "alt":  "Irrigação - Início da irrigação - Prefeitura de Rio Doce"
     },
     {
         "title":  "Colocação dos tubos nas valas",
         "category":  "irrigacao",
-        "service":  "Irriga\u00e7\u00e3o",
+        "service":  "Irrigação",
         "client":  "Projeto Hexágono - Samarco",
         "location":  "Projeto Hexágono",
-        "image":  "/portfolio-real/construcao/03-construcao-colocando-os-tubos-nas-valas-3.jpg",
-        "alt":  "Irriga\u00e7\u00e3o - Colocação dos tubos nas valas - Projeto Hexágono - Samarco"
+        "image":  "/portfolio-real/irrigacao/03-irrigacao-colocacao-tubos-valas.jpg",
+        "alt":  "Irrigação - Colocação dos tubos nas valas - Projeto Hexágono - Samarco"
     },
     {
-        "title":  "Serviço de drenagem, limpeza do gramado e fechamento dos drenos",
-        "category":  "construcao",
-        "service":  "Construção Civil",
+        "title":  "Drenagem e fechamento de drenos",
+        "category":  "irrigacao",
+        "service":  "Irrigação",
         "client":  "Prefeitura de Rio Doce",
         "location":  "Rio Doce, MG",
-        "image":  "/portfolio-real/construcao/04-construcao-servico-de-drenagem-limpeza-do-gramado-e-fechamento-dos-drenos-4.jpg",
-        "alt":  "Construção Civil - Serviço de drenagem, limpeza do gramado e fechamento dos drenos - Prefeitura de Rio Doce"
+        "image":  "/portfolio-real/irrigacao/04-irrigacao-drenagem-fechamento-drenos.jpg",
+        "alt":  "Irrigação - Drenagem e fechamento de drenos - Prefeitura de Rio Doce"
     },
     {
         "title":  "Irrigação do campo",
         "category":  "irrigacao",
-        "service":  "Irriga\u00e7\u00e3o",
+        "service":  "Irrigação",
         "client":  "Prefeitura de Diamantina",
         "location":  "Diamantina, MG",
-        "image":  "/portfolio-real/construcao/05-construcao-irrigacao-campo-5.jpg",
-        "alt":  "Irriga\u00e7\u00e3o - Irrigação do campo - Prefeitura de Diamantina"
+        "image":  "/portfolio-real/irrigacao/05-irrigacao-campo.jpg",
+        "alt":  "Irrigação - Irrigação do campo - Prefeitura de Diamantina"
     },
     {
-        "title":  "Colocação dos tubos nas valas",
+        "title":  "Tubulação nas valas de irrigação",
         "category":  "irrigacao",
-        "service":  "Irriga\u00e7\u00e3o",
+        "service":  "Irrigação",
         "client":  "Projeto Hexágono - Samarco",
         "location":  "Projeto Hexágono",
-        "image":  "/portfolio-real/construcao/06-construcao-colocando-os-tubos-nas-valas-6.jpg",
-        "alt":  "Irriga\u00e7\u00e3o - Colocação dos tubos nas valas - Projeto Hexágono - Samarco"
+        "image":  "/portfolio-real/irrigacao/06-irrigacao-tubos-valas.jpg",
+        "alt":  "Irrigação - Tubulação nas valas de irrigação - Projeto Hexágono - Samarco"
     },
     {
-        "title":  "Marcação das valas",
+        "title":  "Marcação das valas de irrigação",
         "category":  "irrigacao",
-        "service":  "Irriga\u00e7\u00e3o",
+        "service":  "Irrigação",
         "client":  "Prefeitura de Rio Doce",
         "location":  "Rio Doce, MG",
-        "image":  "/portfolio-real/construcao/07-construcao-marcacao-das-valas-7.jpg",
-        "alt":  "Irriga\u00e7\u00e3o - Marcação das valas - Prefeitura de Rio Doce"
+        "image":  "/portfolio-real/irrigacao/07-irrigacao-marcacao-valas.jpg",
+        "alt":  "Irrigação - Marcação das valas de irrigação - Prefeitura de Rio Doce"
     },
     {
-        "title":  "Irrigação do campo",
+        "title":  "Sistema de irrigação do campo",
         "category":  "irrigacao",
-        "service":  "Irriga\u00e7\u00e3o",
+        "service":  "Irrigação",
         "client":  "Prefeitura de Diamantina",
         "location":  "Diamantina, MG",
-        "image":  "/portfolio-real/construcao/08-construcao-irrigacao-campo-8.jpg",
-        "alt":  "Irriga\u00e7\u00e3o - Irrigação do campo - Prefeitura de Diamantina"
+        "image":  "/portfolio-real/irrigacao/08-irrigacao-sistema-campo.jpg",
+        "alt":  "Irrigação - Sistema de irrigação do campo - Prefeitura de Diamantina"
     },
     {
         "title":  "Manutenção de áreas verdes",

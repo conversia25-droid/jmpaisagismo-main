@@ -19,7 +19,7 @@ const showcaseItems = [
   {
     service: "Irriga\u00e7\u00e3o",
     title: "Irriga\u00e7\u00e3o para gramados esportivos",
-    image: "/portfolio-real/construcao/05-construcao-irrigacao-campo-5.jpg",
+    image: "/portfolio-real/irrigacao/05-irrigacao-campo.jpg",
     href: "/portfolio?servico=irrigacao",
   },
   {
@@ -49,7 +49,7 @@ const showcaseItems = [
   {
     service: "Irriga\u00e7\u00e3o",
     title: "Sistemas de irriga\u00e7\u00e3o para campos",
-    image: "/portfolio-real/construcao/08-construcao-irrigacao-campo-8.jpg",
+    image: "/portfolio-real/irrigacao/08-irrigacao-sistema-campo.jpg",
     href: "/portfolio?servico=irrigacao",
   },
 ] as const;
