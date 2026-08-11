@@ -274,21 +274,21 @@ export const portfolioItems: readonly PortfolioItem[] = [
     },
     {
         "title":  "Rastelamento do campo",
-        "category":  "limpeza",
-        "service":  "Limpeza Urbana",
+        "category":  "gramados",
+        "service":  "Gramados Esportivos",
         "client":  "Prefeitura de Morro do Pilar",
         "location":  "Morro do Pilar, MG",
         "image":  "/portfolio-real/limpeza/05-limpeza-rastelamento-do-campo-5.jpg",
-        "alt":  "Limpeza Urbana - Rastelamento do campo - Prefeitura de Morro do Pilar"
+        "alt":  "Gramados Esportivos - Rastelamento do campo - Prefeitura de Morro do Pilar"
     },
     {
         "title":  "Corte em torno do campo com roçadeira",
-        "category":  "limpeza",
-        "service":  "Limpeza Urbana",
+        "category":  "gramados",
+        "service":  "Gramados Esportivos",
         "client":  "Prefeitura de Morro do Pilar",
         "location":  "Morro do Pilar, MG",
         "image":  "/portfolio-real/limpeza/06-limpeza-corte-em-torno-do-campo-com-rocadeira-6.jpg",
-        "alt":  "Limpeza Urbana - Corte em torno do campo com roçadeira - Prefeitura de Morro do Pilar"
+        "alt":  "Gramados Esportivos - Corte em torno do campo com roçadeira - Prefeitura de Morro do Pilar"
     },
     {
         "title":  "Limpeza e conservação urbana",
