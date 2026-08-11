@@ -34,7 +34,7 @@ const services: {
     title: "Manuten\u00e7\u00e3o de Jardins",
     description:
       "Cuidamos do seu jardim com podas regulares, aduba\u00e7\u00e3o e controle de pragas para manter a beleza o ano todo.",
-    image: publicPath("/portfolio-real/jardins/06-jardins-jardim-municipal-taquaracu.jpg"),
+    image: publicPath("/portfolio-real/jardins/03-jardins-area-convivencia-verde-mrv.jpg"),
     category: "jardins",
   },
   {

@@ -165,78 +165,77 @@ export const portfolioItems: readonly PortfolioItem[] = [
         "alt":  "Irrigação - Sistema de irrigação do campo - Prefeitura de Diamantina"
     },
     {
-        "title":  "Manutenção de áreas verdes",
-        "category":  "jardins",
-        "service":  "Manutenção de Jardins",
-        "client":  "Praça Nossa Senhora da Conceição",
-        "location":  "Minas Gerais",
-        "image":  "/portfolio-real/jardins/01-jardins-manutencao-de-areas-verdes-1.jpg",
-        "alt":  "Manutenção de Jardins - Manutenção de áreas verdes - Praça Nossa Senhora da Conceição"
-    },
-    {
-        "title":  "Conservação da praça",
-        "category":  "jardins",
-        "service":  "Manutenção de Jardins",
-        "client":  "Praça Nossa Senhora da Conceição",
-        "location":  "Minas Gerais",
-        "image":  "/portfolio-real/jardins/02-jardins-conservacao-da-praca.jpg",
-        "alt":  "Manutenção de Jardins - Conservação da praça - Praça Nossa Senhora da Conceição"
-    },
-    {
-        "title":  "Sede",
-        "category":  "jardins",
-        "service":  "Manutenção de Jardins",
-        "client":  "MRV",
-        "location":  "Cliente corporativo",
-        "image":  "/portfolio-real/jardins/03-jardins-sede-3.jpg",
-        "alt":  "Manutenção de Jardins - Sede - MRV"
-    },
-    {
-        "title":  "Catedral BH",
-        "category":  "jardins",
-        "service":  "Manutenção de Jardins",
-        "client":  "IURD",
-        "location":  "Cliente institucional",
-        "image":  "/portfolio-real/jardins/04-jardins-catedral-bh-4.jpg",
-        "alt":  "Manutenção de Jardins - Catedral BH - IURD"
-    },
-    {
-        "title":  "Terreno Aimorés",
-        "category":  "jardins",
-        "service":  "Manutenção de Jardins",
-        "client":  "IURD",
-        "location":  "Cliente institucional",
-        "image":  "/portfolio-real/jardins/05-jardins-terreno-aimores-5.jpg",
-        "alt":  "Manutenção de Jardins - Terreno Aimorés - IURD"
-    },
-    {
-        "title":  "Jardim municipal",
+        "title":  "Jardim municipal com palmeiras",
         "category":  "jardins",
         "service":  "Manutenção de Jardins",
         "client":  "Prefeitura de Taquaraçu de Minas",
         "location":  "Taquaraçu de Minas, MG",
-        "image":  "/portfolio-real/jardins/06-jardins-jardim-municipal-taquaracu.jpg",
-        "alt":  "Manutenção de Jardins - Jardim municipal - Prefeitura de Taquaraçu de Minas"
+        "image":  "/portfolio-real/jardins/01-jardins-jardim-municipal-taquaracu.jpg",
+        "alt":  "Manutenção de Jardins - Jardim municipal com palmeiras - Prefeitura de Taquaraçu de Minas"
     },
     {
-        "title":  "Sede",
+        "title":  "Canteiro corporativo aparado",
         "category":  "jardins",
         "service":  "Manutenção de Jardins",
         "client":  "MRV",
         "location":  "Cliente corporativo",
-        "image":  "/portfolio-real/jardins/07-jardins-sede-7.jpg",
-        "alt":  "Manutenção de Jardins - Sede - MRV"
+        "image":  "/portfolio-real/jardins/02-jardins-canteiro-corporativo-mrv.jpg",
+        "alt":  "Manutenção de Jardins - Canteiro corporativo aparado - MRV"
     },
     {
-        "title":  "Replantio de grama no campo",
+        "title":  "Área de convivência ajardinada",
         "category":  "jardins",
         "service":  "Manutenção de Jardins",
-        "client":  "Prefeitura de Morro do Pilar",
-        "location":  "Morro do Pilar, MG",
-        "image":  "/portfolio-real/jardins/08-jardins-replantio-de-grama-no-campo-8.jpg",
-        "alt":  "Manutenção de Jardins - Replantio de grama no campo - Prefeitura de Morro do Pilar"
+        "client":  "MRV",
+        "location":  "Cliente corporativo",
+        "image":  "/portfolio-real/jardins/03-jardins-area-convivencia-verde-mrv.jpg",
+        "alt":  "Manutenção de Jardins - Área de convivência ajardinada - MRV"
     },
     {
+        "title":  "Manutenção de canteiros da sede",
+        "category":  "jardins",
+        "service":  "Manutenção de Jardins",
+        "client":  "MRV",
+        "location":  "Cliente corporativo",
+        "image":  "/portfolio-real/jardins/04-jardins-canteiros-sede-mrv.jpg",
+        "alt":  "Manutenção de Jardins - Manutenção de canteiros da sede - MRV"
+    },
+    {
+        "title":  "Paisagismo de área verde",
+        "category":  "jardins",
+        "service":  "Manutenção de Jardins",
+        "client":  "MRV",
+        "location":  "Cliente corporativo",
+        "image":  "/portfolio-real/jardins/05-jardins-paisagismo-area-verde-mrv.jpg",
+        "alt":  "Manutenção de Jardins - Paisagismo de área verde - MRV"
+    },
+    {
+        "title":  "Cerca viva e arbustos aparados",
+        "category":  "jardins",
+        "service":  "Manutenção de Jardins",
+        "client":  "IURD",
+        "location":  "Cliente institucional",
+        "image":  "/portfolio-real/jardins/06-jardins-cerca-viva-catedral-bh.jpg",
+        "alt":  "Manutenção de Jardins - Cerca viva e arbustos aparados - IURD"
+    },
+    {
+        "title":  "Canteiro ornamental da catedral",
+        "category":  "jardins",
+        "service":  "Manutenção de Jardins",
+        "client":  "IURD",
+        "location":  "Cliente institucional",
+        "image":  "/portfolio-real/jardins/07-jardins-canteiro-ornamental-catedral-bh.jpg",
+        "alt":  "Manutenção de Jardins - Canteiro ornamental da catedral - IURD"
+    },
+    {
+        "title":  "Canteiro ornamental da praça",
+        "category":  "jardins",
+        "service":  "Manutenção de Jardins",
+        "client":  "Praça Nossa Senhora da Conceição",
+        "location":  "Minas Gerais",
+        "image":  "/portfolio-real/jardins/08-jardins-canteiro-ornamental-praca.jpg",
+        "alt":  "Manutenção de Jardins - Canteiro ornamental da praça - Praça Nossa Senhora da Conceição"
+    },    {
         "title":  "Campo",
         "category":  "gramados",
         "service":  "Gramados Esportivos",

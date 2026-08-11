@@ -13,7 +13,7 @@ const showcaseItems = [
   {
     service: "Manuten\u00e7\u00e3o de Jardins",
     title: "Jardins e \u00e1reas verdes sempre cuidados",
-    image: "/portfolio-real/jardins/06-jardins-jardim-municipal-taquaracu.jpg",
+    image: "/portfolio-real/jardins/03-jardins-area-convivencia-verde-mrv.jpg",
     href: "/portfolio?servico=jardins",
   },
   {
@@ -43,7 +43,7 @@ const showcaseItems = [
   {
     service: "Manuten\u00e7\u00e3o de Jardins",
     title: "Clientes corporativos e institucionais",
-    image: "/portfolio-real/jardins/03-jardins-sede-3.jpg",
+    image: "/portfolio-real/jardins/02-jardins-canteiro-corporativo-mrv.jpg",
     href: "/portfolio?servico=jardins",
   },
   {
