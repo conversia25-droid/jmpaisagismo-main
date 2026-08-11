@@ -308,48 +308,12 @@ export const portfolioItems: readonly PortfolioItem[] = [
         "alt":  "Gramados Esportivos - Campo Santana do Deserto, Rio Doce - Projeto Hexágono - Samarco"
     },
     {
-        "title":  "Limpeza e conservação urbana",
-        "category":  "limpeza",
-        "service":  "Limpeza Urbana",
-        "client":  "Praça Nossa Senhora da Conceição",
-        "location":  "Minas Gerais",
-        "image":  "/portfolio-real/limpeza/01-limpeza-limpeza-e-conservacao-urbana-1.jpg",
-        "alt":  "Limpeza Urbana - Limpeza e conservação urbana - Praça Nossa Senhora da Conceição"
-    },
-    {
-        "title":  "Limpeza e conservação urbana",
-        "category":  "limpeza",
-        "service":  "Limpeza Urbana",
-        "client":  "Praça Nossa Senhora da Conceição",
-        "location":  "Minas Gerais",
-        "image":  "/portfolio-real/limpeza/02-limpeza-limpeza-e-conservacao-urbana-2.jpg",
-        "alt":  "Limpeza Urbana - Limpeza e conservação urbana - Praça Nossa Senhora da Conceição"
-    },
-    {
-        "title":  "Limpeza urbana",
-        "category":  "limpeza",
-        "service":  "Limpeza Urbana",
-        "client":  "Prefeitura de Rio Doce",
-        "location":  "Rio Doce, MG",
-        "image":  "/portfolio-real/limpeza/03-limpeza-limpeza-urbana-3.jpg",
-        "alt":  "Limpeza Urbana - Limpeza urbana - Prefeitura de Rio Doce"
-    },
-    {
-        "title":  "Limpeza urbana",
-        "category":  "limpeza",
-        "service":  "Limpeza Urbana",
-        "client":  "Prefeitura de Rio Doce",
-        "location":  "Rio Doce, MG",
-        "image":  "/portfolio-real/limpeza/04-limpeza-limpeza-urbana-4.jpg",
-        "alt":  "Limpeza Urbana - Limpeza urbana - Prefeitura de Rio Doce"
-    },
-    {
         "title":  "Rastelamento do campo",
         "category":  "gramados",
         "service":  "Gramados Esportivos",
         "client":  "Prefeitura de Morro do Pilar",
         "location":  "Morro do Pilar, MG",
-        "image":  "/portfolio-real/limpeza/05-limpeza-rastelamento-do-campo-5.jpg",
+        "image":  "/portfolio-real/gramados/09-gramados-rastelamento-campo.jpg",
         "alt":  "Gramados Esportivos - Rastelamento do campo - Prefeitura de Morro do Pilar"
     },
     {
@@ -358,28 +322,81 @@ export const portfolioItems: readonly PortfolioItem[] = [
         "service":  "Gramados Esportivos",
         "client":  "Prefeitura de Morro do Pilar",
         "location":  "Morro do Pilar, MG",
-        "image":  "/portfolio-real/limpeza/06-limpeza-corte-em-torno-do-campo-com-rocadeira-6.jpg",
+        "image":  "/portfolio-real/gramados/10-gramados-corte-entorno-campo-rocadeira.jpg",
         "alt":  "Gramados Esportivos - Corte em torno do campo com roçadeira - Prefeitura de Morro do Pilar"
     },
     {
-        "title":  "Limpeza e conservação urbana",
-        "category":  "limpeza",
-        "service":  "Limpeza Urbana",
-        "client":  "Praça Nossa Senhora da Conceição",
-        "location":  "Minas Gerais",
-        "image":  "/portfolio-real/limpeza/07-limpeza-limpeza-e-conservacao-urbana-7.jpg",
-        "alt":  "Limpeza Urbana - Limpeza e conservação urbana - Praça Nossa Senhora da Conceição"
-    },
-    {
-        "title":  "Limpeza urbana",
+        "title":  "Varrição de passeio público",
         "category":  "limpeza",
         "service":  "Limpeza Urbana",
         "client":  "Prefeitura de Rio Doce",
         "location":  "Rio Doce, MG",
-        "image":  "/portfolio-real/limpeza/08-limpeza-limpeza-urbana-8.jpg",
-        "alt":  "Limpeza Urbana - Limpeza urbana - Prefeitura de Rio Doce"
+        "image":  "/portfolio-real/limpeza/01-limpeza-varricao-passeio-rio-doce.jpg",
+        "alt":  "Limpeza Urbana - Varrição de passeio público - Prefeitura de Rio Doce"
     },
     {
+        "title":  "Pintura de meio-fio",
+        "category":  "limpeza",
+        "service":  "Limpeza Urbana",
+        "client":  "Prefeitura de Rio Doce",
+        "location":  "Rio Doce, MG",
+        "image":  "/portfolio-real/limpeza/02-limpeza-pintura-meio-fio-rio-doce.jpg",
+        "alt":  "Limpeza Urbana - Pintura de meio-fio - Prefeitura de Rio Doce"
+    },
+    {
+        "title":  "Conservação de via pública",
+        "category":  "limpeza",
+        "service":  "Limpeza Urbana",
+        "client":  "Prefeitura de Rio Doce",
+        "location":  "Rio Doce, MG",
+        "image":  "/portfolio-real/limpeza/03-limpeza-via-publica-conservada-rio-doce.jpg",
+        "alt":  "Limpeza Urbana - Conservação de via pública - Prefeitura de Rio Doce"
+    },
+    {
+        "title":  "Rua conservada e meio-fio pintado",
+        "category":  "limpeza",
+        "service":  "Limpeza Urbana",
+        "client":  "Prefeitura de Rio Doce",
+        "location":  "Rio Doce, MG",
+        "image":  "/portfolio-real/limpeza/04-limpeza-rua-conservada-rio-doce.jpg",
+        "alt":  "Limpeza Urbana - Rua conservada e meio-fio pintado - Prefeitura de Rio Doce"
+    },
+    {
+        "title":  "Rua pavimentada conservada",
+        "category":  "limpeza",
+        "service":  "Limpeza Urbana",
+        "client":  "Prefeitura de Rio Doce",
+        "location":  "Rio Doce, MG",
+        "image":  "/portfolio-real/limpeza/05-limpeza-rua-urbana-rio-doce.jpg",
+        "alt":  "Limpeza Urbana - Rua pavimentada conservada - Prefeitura de Rio Doce"
+    },
+    {
+        "title":  "Acabamento de meio-fio",
+        "category":  "limpeza",
+        "service":  "Limpeza Urbana",
+        "client":  "Prefeitura de Rio Doce",
+        "location":  "Rio Doce, MG",
+        "image":  "/portfolio-real/limpeza/06-limpeza-acabamento-meio-fio-rio-doce.jpg",
+        "alt":  "Limpeza Urbana - Acabamento de meio-fio - Prefeitura de Rio Doce"
+    },
+    {
+        "title":  "Roçagem lateral de via",
+        "category":  "limpeza",
+        "service":  "Limpeza Urbana",
+        "client":  "Prefeitura de Morro do Pilar",
+        "location":  "Morro do Pilar, MG",
+        "image":  "/portfolio-real/limpeza/07-limpeza-rocagem-lateral-via-morro-pilar.jpg",
+        "alt":  "Limpeza Urbana - Roçagem lateral de via - Prefeitura de Morro do Pilar"
+    },
+    {
+        "title":  "Capina e limpeza de passeio",
+        "category":  "limpeza",
+        "service":  "Limpeza Urbana",
+        "client":  "Prefeitura de Morro do Pilar",
+        "location":  "Morro do Pilar, MG",
+        "image":  "/portfolio-real/limpeza/08-limpeza-capina-passeio-morro-pilar.jpg",
+        "alt":  "Limpeza Urbana - Capina e limpeza de passeio - Prefeitura de Morro do Pilar"
+    },    {
         "title":  "Corte e supressão de árvores",
         "category":  "poda",
         "service":  "Poda de Árvores",

@@ -25,7 +25,7 @@ const showcaseItems = [
   {
     service: "Limpeza Urbana",
     title: "Conserva\u00e7\u00e3o de \u00e1reas p\u00fablicas",
-    image: "/portfolio-real/limpeza/03-limpeza-limpeza-urbana-3.jpg",
+    image: "/portfolio-real/limpeza/03-limpeza-via-publica-conservada-rio-doce.jpg",
     href: "/portfolio?servico=limpeza",
   },
   {

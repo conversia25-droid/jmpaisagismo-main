@@ -50,7 +50,7 @@ const services: {
     title: "Limpeza Urbana",
     description:
       "Capina, ro\u00e7agem, varri\u00e7\u00e3o, pintura de meio-fio, lavagem de vias e coleta de entulho vegetal e civil.",
-    image: publicPath("/portfolio-real/limpeza/03-limpeza-limpeza-urbana-3.jpg"),
+    image: publicPath("/portfolio-real/limpeza/03-limpeza-via-publica-conservada-rio-doce.jpg"),
     category: "limpeza",
   },
   {

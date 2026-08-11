@@ -1,4 +1,4 @@
-﻿export type ClientHighlight = {
+export type ClientHighlight = {
   client: string;
   location: string;
   title: string;
@@ -60,7 +60,7 @@ export const clientHighlights: readonly ClientHighlight[] = [
     client: "Prefeitura de Rio Doce",
     location: "Rio Doce, MG",
     title: "Limpeza urbana",
-    image: "/portfolio-real/limpeza/03-limpeza-limpeza-urbana-3.jpg",
+    image: "/portfolio-real/limpeza/03-limpeza-via-publica-conservada-rio-doce.jpg",
     alt: "Prefeitura de Rio Doce - Limpeza urbana",
   },
   {
@@ -88,7 +88,7 @@ export const clientHighlights: readonly ClientHighlight[] = [
     client: "Prefeitura de Morro do Pilar",
     location: "Morro do Pilar, MG",
     title: "Conservação de campo",
-    image: "/portfolio-real/limpeza/05-limpeza-rastelamento-do-campo-5.jpg",
+    image: "/portfolio-real/gramados/09-gramados-rastelamento-campo.jpg",
     alt: "Prefeitura de Morro do Pilar - Conservação de campo",
   },
 ];
