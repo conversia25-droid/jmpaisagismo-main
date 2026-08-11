@@ -76,7 +76,7 @@ const HeroSection = () => {
       </div>
 
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-primary-foreground/65 animate-fade-in">
-        <span className="font-body text-xs">Ver servi\u00e7os</span>
+        <span className="font-body text-xs">{"Ver servi\u00e7os"}</span>
         <ChevronDown className="h-5 w-5 animate-bounce" />
       </div>
     </section>

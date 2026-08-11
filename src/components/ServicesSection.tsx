@@ -74,7 +74,7 @@ const ServicesSection = () => {
               O que fazemos
             </span>
             <h2 className="font-display text-3xl md:text-5xl font-extrabold tracking-tight text-foreground mt-5">
-              Nossos <span className="text-highlight">Servi\u00e7os</span>
+              Nossos <span className="text-highlight">{"Servi\u00e7os"}</span>
             </h2>
             <p className="font-body text-muted-foreground mt-4">
               {"Solu\u00e7\u00f5es completas em constru\u00e7\u00e3o civil, irriga\u00e7\u00e3o, paisagismo e conserva\u00e7\u00e3o para empresas, condom\u00ednios e \u00f3rg\u00e3os p\u00fablicos."}
