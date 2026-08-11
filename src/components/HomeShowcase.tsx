@@ -47,10 +47,10 @@ const showcaseItems = [
     href: "/portfolio?servico=jardins",
   },
   {
-    service: "Constru\u00e7\u00e3o Civil",
-    title: "Irriga\u00e7\u00e3o, drenagem e preparo t\u00e9cnico",
+    service: "Irriga\u00e7\u00e3o",
+    title: "Sistemas de irriga\u00e7\u00e3o para campos",
     image: "/portfolio-real/construcao/02-construcao-inicio-da-irrigacao-2.jpg",
-    href: "/portfolio?servico=construcao",
+    href: "/portfolio?servico=irrigacao",
   },
 ] as const;
 

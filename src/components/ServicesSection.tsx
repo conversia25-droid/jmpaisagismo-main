@@ -21,6 +21,14 @@ const services: {
     category: "construcao",
   },
   {
+    icon: Droplets,
+    title: "Irriga\u00e7\u00e3o",
+    description:
+      "Instala\u00e7\u00e3o, manuten\u00e7\u00e3o e ajustes de sistemas de irriga\u00e7\u00e3o para campos, gramados e \u00e1reas verdes.",
+    image: publicPath("/portfolio-real/construcao/02-construcao-inicio-da-irrigacao-2.jpg"),
+    category: "irrigacao",
+  },
+  {
     icon: Leaf,
     title: "Manuten\u00e7\u00e3o de Jardins",
     description:
@@ -69,7 +77,7 @@ const ServicesSection = () => {
               Nossos <span className="text-highlight">Servi\u00e7os</span>
             </h2>
             <p className="font-body text-muted-foreground mt-4">
-              {"Solu\u00e7\u00f5es completas em constru\u00e7\u00e3o civil, paisagismo e conserva\u00e7\u00e3o para empresas, condom\u00ednios e \u00f3rg\u00e3os p\u00fablicos."}
+              {"Solu\u00e7\u00f5es completas em constru\u00e7\u00e3o civil, irriga\u00e7\u00e3o, paisagismo e conserva\u00e7\u00e3o para empresas, condom\u00ednios e \u00f3rg\u00e3os p\u00fablicos."}
             </p>
           </div>
 
@@ -114,16 +122,18 @@ const ServicesSection = () => {
               </div>
             ))}
 
-            <div className="rounded-3xl gradient-primary p-8 flex flex-col justify-center glow-shadow">
-              <h3 className="font-display text-2xl font-extrabold text-primary-foreground mb-3">
-                {"Precisa de algo espec\u00edfico?"}
-              </h3>
-              <p className="font-body text-sm text-primary-foreground/85 mb-6">
-                {"Montamos um plano sob medida para a sua \u00e1rea verde ou obra. Fale com a nossa equipe e receba um or\u00e7amento sem compromisso."}
-              </p>
+            <div className="md:col-span-2 lg:col-span-3 rounded-3xl gradient-primary p-8 md:p-10 flex flex-col md:flex-row md:items-center md:justify-between gap-6 glow-shadow">
+              <div className="max-w-2xl">
+                <h3 className="font-display text-2xl font-extrabold text-primary-foreground mb-3">
+                  {"Precisa de algo espec\u00edfico?"}
+                </h3>
+                <p className="font-body text-sm text-primary-foreground/85">
+                  {"Montamos um plano sob medida para a sua \u00e1rea verde ou obra. Fale com a nossa equipe e receba um or\u00e7amento sem compromisso."}
+                </p>
+              </div>
               <Link
                 to="/contato"
-                className="inline-flex items-center gap-2 self-start rounded-full bg-primary-foreground px-6 py-3 font-body font-semibold text-primary hover:opacity-90 transition-opacity"
+                className="inline-flex items-center gap-2 self-start md:self-auto rounded-full bg-primary-foreground px-6 py-3 font-body font-semibold text-primary hover:opacity-90 transition-opacity"
               >
                 {"Solicitar Or\u00e7amento"}
                 <ArrowRight className="h-4 w-4" />

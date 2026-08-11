@@ -1,4 +1,4 @@
-﻿export type PortfolioCategory = "construcao" | "jardins" | "gramados" | "limpeza" | "poda";
+export type PortfolioCategory = "construcao" | "irrigacao" | "jardins" | "gramados" | "limpeza" | "poda";
 
 export type PortfolioItem = {
   title: string;
@@ -12,6 +12,7 @@ export type PortfolioItem = {
 
 export const serviceFilters: readonly { id: PortfolioCategory; label: string }[] = [
   { "id": "construcao", "label": "Construção Civil" },
+  { "id": "irrigacao", "label": "Irriga\u00e7\u00e3o" },
   { "id": "jardins", "label": "Manutenção de Jardins" },
   { "id": "gramados", "label": "Gramados Esportivos" },
   { "id": "limpeza", "label": "Limpeza Urbana" },
@@ -30,12 +31,12 @@ export const portfolioItems: readonly PortfolioItem[] = [
     },
     {
         "title":  "Início Da Irrigação",
-        "category":  "construcao",
-        "service":  "Construção Civil",
+        "category":  "irrigacao",
+        "service":  "Irriga\u00e7\u00e3o",
         "client":  "PREFEITURA DE RIO DOCE",
         "location":  "Rio Doce, MG",
         "image":  "/portfolio-real/construcao/02-construcao-inicio-da-irrigacao-2.jpg",
-        "alt":  "Construção Civil - Início Da Irrigação - PREFEITURA DE RIO DOCE"
+        "alt":  "Irriga\u00e7\u00e3o - Início Da Irrigação - PREFEITURA DE RIO DOCE"
     },
     {
         "title":  "Colocando Os Tubos Nas Valas",
@@ -57,12 +58,12 @@ export const portfolioItems: readonly PortfolioItem[] = [
     },
     {
         "title":  "Irrigação Campo",
-        "category":  "construcao",
-        "service":  "Construção Civil",
+        "category":  "irrigacao",
+        "service":  "Irriga\u00e7\u00e3o",
         "client":  "PREFEITURA DE DIAMANTINA",
         "location":  "Diamantina, MG",
         "image":  "/portfolio-real/construcao/05-construcao-irrigacao-campo-5.jpg",
-        "alt":  "Construção Civil - Irrigação Campo - PREFEITURA DE DIAMANTINA"
+        "alt":  "Irriga\u00e7\u00e3o - Irrigação Campo - PREFEITURA DE DIAMANTINA"
     },
     {
         "title":  "Colocando Os Tubos Nas Valas",
@@ -84,12 +85,12 @@ export const portfolioItems: readonly PortfolioItem[] = [
     },
     {
         "title":  "Irrigação Campo",
-        "category":  "construcao",
-        "service":  "Construção Civil",
+        "category":  "irrigacao",
+        "service":  "Irriga\u00e7\u00e3o",
         "client":  "PREFEITURA DE DIAMANTINA",
         "location":  "Diamantina, MG",
         "image":  "/portfolio-real/construcao/08-construcao-irrigacao-campo-8.jpg",
-        "alt":  "Construção Civil - Irrigação Campo - PREFEITURA DE DIAMANTINA"
+        "alt":  "Irriga\u00e7\u00e3o - Irrigação Campo - PREFEITURA DE DIAMANTINA"
     },
     {
         "title":  "Manutenção de áreas verdes",
