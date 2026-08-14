@@ -31,6 +31,11 @@ const initialForm = {
 };
 
 const ContactCard = ({ item }: { item: ContactItem }) => {
+  const valueClassName =
+    item.label === "E-mail"
+      ? "font-display font-bold text-foreground mt-1 max-w-full text-sm leading-snug [overflow-wrap:anywhere] sm:text-base"
+      : "font-display font-bold text-foreground mt-1 break-words";
+
   const content = (
     <>
       <div className="w-11 h-11 rounded-xl gradient-primary flex items-center justify-center mb-4">
@@ -39,7 +44,7 @@ const ContactCard = ({ item }: { item: ContactItem }) => {
       <div className="font-body text-xs uppercase tracking-wide text-muted-foreground">
         {item.label}
       </div>
-      {item.value && <div className="font-display font-bold text-foreground mt-1 break-words">{item.value}</div>}
+      {item.value && <div className={valueClassName}>{item.value}</div>}
     </>
   );
 
