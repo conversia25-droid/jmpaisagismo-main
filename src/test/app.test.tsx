@@ -65,7 +65,7 @@ describe("JM Paisagismo site", () => {
     expect(screen.queryByText("@jmpaisagismoeconservacao")).not.toBeInTheDocument();
 
     const emailCard = screen.getByRole("link", { name: /e-mail/i });
-    expect(emailCard).toHaveAttribute("href", "mailto:contato@jmpaisagismo.com.br");
+    expect(emailCard).toHaveAttribute("href", "mailto:comercial@jmpaisagismoegramados.com.br");
     expect(screen.getByText("Seg a Sex, 7h às 17h")).toBeInTheDocument();
   });
   it("prepares a WhatsApp message from the contact form", () => {

@@ -5,7 +5,7 @@ export const company = {
   phoneDisplay: "(31) 99063-5460",
   phoneHref: "tel:+5531990635460",
   whatsappNumber: "5531990635460",
-  email: "contato@jmpaisagismo.com.br",
+  email: "comercial@jmpaisagismoegramados.com.br",
   instagramHandle: "@jmpaisagismoeconservacao",
   instagramUrl: "https://www.instagram.com/jmpaisagismoeconservacao/",
   location: "Belo Horizonte, MG",
