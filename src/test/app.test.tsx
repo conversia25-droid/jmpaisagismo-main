@@ -62,7 +62,7 @@ describe("JM Paisagismo site", () => {
       "https://www.instagram.com/jmpaisagismoeconservacao/",
     );
     expect(instagramCard).toHaveAttribute("target", "_blank");
-    expect(screen.getByText("@jmpaisagismoeconservacao")).toBeInTheDocument();
+    expect(screen.queryByText("@jmpaisagismoeconservacao")).not.toBeInTheDocument();
 
     const emailCard = screen.getByRole("link", { name: /e-mail/i });
     expect(emailCard).toHaveAttribute("href", "mailto:contato@jmpaisagismo.com.br");

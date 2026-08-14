@@ -5,7 +5,7 @@ import { company, createWhatsAppUrl } from "@/lib/company";
 type ContactItem = {
   icon: typeof Phone;
   label: string;
-  value: string;
+  value?: string;
   href?: string;
   external?: boolean;
 };
@@ -15,7 +15,6 @@ const contactItems: ContactItem[] = [
   {
     icon: Instagram,
     label: "Instagram",
-    value: company.instagramHandle,
     href: company.instagramUrl,
     external: true,
   },
@@ -39,7 +38,7 @@ const ContactCard = ({ item }: { item: ContactItem }) => {
       <div className="font-body text-xs uppercase tracking-wide text-muted-foreground">
         {item.label}
       </div>
-      <div className="font-display font-bold text-foreground mt-1 break-words">{item.value}</div>
+      {item.value && <div className="font-display font-bold text-foreground mt-1 break-words">{item.value}</div>}
     </>
   );
 
