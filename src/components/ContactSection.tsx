@@ -1,5 +1,5 @@
 import { FormEvent, useState } from "react";
-import { CheckCircle2, Clock, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
+import { CheckCircle2, Clock, Instagram, Mail, MessageCircle, Phone } from "lucide-react";
 import { company, createWhatsAppUrl } from "@/lib/company";
 
 type ContactItem = {
@@ -12,8 +12,14 @@ type ContactItem = {
 
 const contactItems: ContactItem[] = [
   { icon: Phone, label: "Telefone / WhatsApp", value: company.phoneDisplay, href: createWhatsAppUrl(), external: true },
+  {
+    icon: Instagram,
+    label: "Instagram",
+    value: company.instagramHandle,
+    href: company.instagramUrl,
+    external: true,
+  },
   { icon: Mail, label: "E-mail", value: company.email, href: `mailto:${company.email}` },
-  { icon: MapPin, label: "Localização", value: company.location, href: company.mapsUrl, external: true },
   { icon: Clock, label: "Atendimento", value: "Seg a Sex, 8h às 18h" },
 ];
 

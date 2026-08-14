@@ -47,7 +47,7 @@ describe("JM Paisagismo site", () => {
     fireEvent.click(screen.getByRole("button", { name: /foto anterior/i }));
     expect(screen.getByText(/1 de 8/i)).toBeInTheDocument();
   });
-  it("opens the contact phone card in WhatsApp", () => {
+  it("opens the contact cards with WhatsApp, Instagram and email", () => {
     window.history.pushState({}, "", "/contato");
 
     render(<App />);
@@ -55,6 +55,17 @@ describe("JM Paisagismo site", () => {
     const phoneCard = screen.getByRole("link", { name: /telefone \/ whatsapp/i });
     expect(phoneCard).toHaveAttribute("href", expect.stringContaining("https://wa.me/5531990635460"));
     expect(phoneCard).toHaveAttribute("target", "_blank");
+
+    const instagramCard = screen.getByRole("link", { name: /instagram/i });
+    expect(instagramCard).toHaveAttribute(
+      "href",
+      "https://www.instagram.com/jmpaisagismoeconservacao/",
+    );
+    expect(instagramCard).toHaveAttribute("target", "_blank");
+    expect(screen.getByText("@jmpaisagismoeconservacao")).toBeInTheDocument();
+
+    const emailCard = screen.getByRole("link", { name: /e-mail/i });
+    expect(emailCard).toHaveAttribute("href", "mailto:contato@jmpaisagismo.com.br");
   });
   it("prepares a WhatsApp message from the contact form", () => {
     window.history.pushState({}, "", "/contato");
