@@ -5,7 +5,8 @@ import { company } from "@/lib/company";
 import { publicPath } from "@/lib/publicPath";
 
 const heroBg = publicPath("/portfolio-real/gramados/07-gramados-campo-de-novo-soberbo-santa-cruz-do-escalvado-7.jpg");
-const heroTitleLine1 = "JM Paisagismo e";
+const heroBrand = "JM";
+const heroTitleLine1 = "Paisagismo e";
 const heroTitleLine2 = "Limpeza Urbana";
 const heroSubtitle = "Irriga\u00e7\u00e3o, gramado esportivo e Engenharia Civil";
 const heroDescription =
@@ -38,11 +39,14 @@ const HeroSection = () => {
           </span>
 
           <h1
-            className="mx-auto max-w-5xl font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold leading-[0.98] tracking-normal text-primary-foreground mt-6 mb-5 animate-fade-up"
+            className="mx-auto max-w-5xl font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black leading-[0.98] tracking-normal text-primary-foreground mt-6 mb-5 animate-fade-up"
             style={{ textShadow: "0 4px 18px rgba(0, 0, 0, 0.72)" }}
           >
-            {heroTitleLine1}
-            <span className="block text-highlight mt-1">{heroTitleLine2}</span>
+            <span className="inline-flex flex-wrap items-baseline justify-center gap-x-4">
+              <span className="hero-brand text-[1.08em]">{heroBrand}</span>
+              <span>{heroTitleLine1}</span>
+            </span>
+            <span className="block text-highlight mt-1 font-black">{heroTitleLine2}</span>
           </h1>
 
           <p
