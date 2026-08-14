@@ -43,7 +43,7 @@ const ContactCard = ({ item }: { item: ContactItem }) => {
   );
 
   const className =
-    "group bg-card rounded-2xl p-6 border border-border card-shadow hover:card-hover-shadow hover:-translate-y-1 transition-all duration-300";
+    "group flex min-h-[150px] flex-col items-center justify-center rounded-2xl border border-border bg-card p-6 text-center card-shadow transition-all duration-300 hover:-translate-y-1 hover:card-hover-shadow";
 
   if (!item.href) {
     return <div className={className}>{content}</div>;
