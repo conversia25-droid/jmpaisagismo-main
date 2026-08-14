@@ -10,16 +10,19 @@ const pillars = [
     icon: Hammer,
     title: "Constru\u00e7\u00e3o Civil",
     text: "Obras e reformas em pra\u00e7as, jardins e espa\u00e7os urbanos com planejamento t\u00e9cnico.",
+    href: "/portfolio?servico=construcao",
   },
   {
     icon: Leaf,
-    title: "Paisagismo & Gramados",
+    title: "Paisagismo e Gramados",
     text: "Projetos, implanta\u00e7\u00e3o e manuten\u00e7\u00e3o de jardins e gramados esportivos.",
+    href: "/portfolio?servico=jardins",
   },
   {
     icon: Trees,
-    title: "Limpeza & Conserva\u00e7\u00e3o",
+    title: "Limpeza e Conserva\u00e7\u00e3o",
     text: "Capina, ro\u00e7agem, varri\u00e7\u00e3o e conserva\u00e7\u00e3o de \u00e1reas p\u00fablicas e privadas.",
+    href: "/portfolio?servico=limpeza",
   },
 ];
 
@@ -45,11 +48,13 @@ const Index = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
             {pillars.map((pillar) => (
-              <div
+              <Link
                 key={pillar.title}
-                className="bg-card rounded-3xl p-8 border border-border card-shadow hover:card-hover-shadow hover:-translate-y-1 transition-all duration-300"
+                to={pillar.href}
+                aria-label={`Ver trabalhos de ${pillar.title}`}
+                className="group block bg-card rounded-3xl p-8 border border-border card-shadow hover:card-hover-shadow hover:-translate-y-1 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/60"
               >
-                <div className="w-12 h-12 rounded-xl gradient-primary flex items-center justify-center mb-5">
+                <div className="w-12 h-12 rounded-xl gradient-primary flex items-center justify-center mb-5 transition-transform duration-300 group-hover:scale-105">
                   <pillar.icon className="h-6 w-6 text-primary-foreground" />
                 </div>
                 <h3 className="font-display text-xl font-bold text-foreground mb-2">
@@ -58,7 +63,7 @@ const Index = () => {
                 <p className="font-body text-sm text-muted-foreground leading-relaxed">
                   {pillar.text}
                 </p>
-              </div>
+              </Link>
             ))}
           </div>
 

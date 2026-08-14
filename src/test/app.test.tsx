@@ -19,6 +19,18 @@ describe("JM Paisagismo site", () => {
     const servicesLink = screen.getByRole("link", { name: /ver servi/i });
     expect(servicesLink).toHaveAttribute("href", "#servicos");
     expect(screen.getByRole("heading", { name: /fotos reais passando pela tela/i })).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: /ver trabalhos de construção civil/i })).toHaveAttribute(
+      "href",
+      "/portfolio?servico=construcao",
+    );
+    expect(screen.getByRole("link", { name: /ver trabalhos de paisagismo e gramados/i })).toHaveAttribute(
+      "href",
+      "/portfolio?servico=jardins",
+    );
+    expect(screen.getByRole("link", { name: /ver trabalhos de limpeza e conservação/i })).toHaveAttribute(
+      "href",
+      "/portfolio?servico=limpeza",
+    );
   });
 
   it("opens the contact phone card in WhatsApp", () => {
