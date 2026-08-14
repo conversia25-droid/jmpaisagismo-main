@@ -85,7 +85,8 @@ describe("JM Paisagismo site", () => {
     const [url] = open.mock.calls[0];
     const decodedUrl = decodeURIComponent(String(url));
 
-    expect(decodedUrl).toContain("https://wa.me/5531990635460");
+    expect(screen.getByText("Envio de teste: (31) 99128-4490")).toBeInTheDocument();
+    expect(decodedUrl).toContain("https://wa.me/5531991284490");
     expect(decodedUrl).toContain("Maria Silva");
     expect(decodedUrl).toContain("maria@email.com");
     expect(decodedUrl).toContain("manutenção de jardim");
