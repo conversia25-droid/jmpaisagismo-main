@@ -7,7 +7,7 @@ import { publicPath } from "@/lib/publicPath";
 const heroBg = publicPath("/portfolio-real/gramados/07-gramados-campo-de-novo-soberbo-santa-cruz-do-escalvado-7.jpg");
 const heroTitleLine1 = "JM Paisagismo e";
 const heroTitleLine2 = "Limpeza Urbana";
-const heroSubtitle = "Irriga\u00e7\u00e3o, gramado esportivo e Engenharia Civil";
+const heroSubtitle = "Irriga\u00e7\u00e3o, Gramados Esportivos e Engenharia Civil";
 const heroDescription =
   "Atendemos condom\u00ednios, empresas, \u00e1reas p\u00fablicas e resid\u00eancias com solu\u00e7\u00f5es completas, equipe pr\u00f3pria e registros reais dos trabalhos entregues.";
 
