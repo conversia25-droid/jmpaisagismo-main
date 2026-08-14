@@ -82,14 +82,17 @@ const ContactSection = () => {
     }
 
     const whatsappMessage = [
-      `Olá! Meu nome é ${name}.`,
+      "Olá, gostaria de solicitar um orçamento.",
+      "",
+      `Nome: ${name}`,
       `Telefone: ${phone}`,
       email ? `E-mail: ${email}` : null,
-      "Gostaria de solicitar um orçamento para:",
+      "",
+      "Pedido:",
       message,
     ]
-      .filter(Boolean)
-      .join("\n");
+      .filter((line): line is string => line !== null)
+      .join("\r\n");
 
     window.open(createContactFormWhatsAppUrl(whatsappMessage), "_blank", "noopener,noreferrer");
     setStatus({
