@@ -5,7 +5,9 @@ import { company } from "@/lib/company";
 import { publicPath } from "@/lib/publicPath";
 
 const heroBg = publicPath("/portfolio-real/gramados/07-gramados-campo-de-novo-soberbo-santa-cruz-do-escalvado-7.jpg");
-const heroTitle = "Constru\u00e7\u00e3o, Paisagismo e Conserva\u00e7\u00e3o com Acabamento de";
+const heroTitleLine1 = "JM Paisagismo e";
+const heroTitleLine2 = "Limpeza Urbana";
+const heroSubtitle = "Irriga\u00e7\u00e3o, gramado esportivo e Engenharia Civil";
 const heroDescription =
   "Atendemos condom\u00ednios, empresas, \u00e1reas p\u00fablicas e resid\u00eancias com solu\u00e7\u00f5es completas, equipe pr\u00f3pria e registros reais dos trabalhos entregues.";
 
@@ -36,12 +38,22 @@ const HeroSection = () => {
           </span>
 
           <h1
-            className="mx-auto max-w-5xl font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.08] tracking-normal text-primary-foreground mt-6 mb-6 animate-fade-up"
+            className="mx-auto max-w-5xl font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold leading-[0.98] tracking-normal text-primary-foreground mt-6 mb-5 animate-fade-up"
             style={{ textShadow: "0 4px 18px rgba(0, 0, 0, 0.72)" }}
           >
-            {heroTitle}{" "}
-            <span className="text-highlight">Primeira</span>
+            {heroTitleLine1}
+            <span className="block text-highlight mt-1">{heroTitleLine2}</span>
           </h1>
+
+          <p
+            className="font-display text-xl sm:text-2xl md:text-3xl font-bold italic leading-tight text-primary-foreground max-w-3xl mx-auto mb-5 animate-fade-up"
+            style={{
+              animationDelay: "0.12s",
+              textShadow: "0 3px 14px rgba(0, 0, 0, 0.78)",
+            }}
+          >
+            {heroSubtitle}
+          </p>
 
           <p
             className="font-body text-base sm:text-xl font-medium leading-relaxed text-primary-foreground max-w-3xl mx-auto mb-10 animate-fade-up"

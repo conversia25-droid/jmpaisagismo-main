@@ -12,7 +12,7 @@ describe("JM Paisagismo site", () => {
 
     expect(
       screen.getByRole("heading", {
-        name: /construção, paisagismo e conservação com acabamento de primeira/i,
+        name: /jm paisagismo e limpeza urbana/i,
       }),
     ).toBeInTheDocument();
     expect(screen.getByRole("link", { name: /solicitar orçamento/i })).toBeInTheDocument();
