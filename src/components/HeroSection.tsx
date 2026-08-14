@@ -87,14 +87,14 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <Link
-        to="/servicos"
+      <a
+        href="#servicos"
         aria-label="Ver serviços"
-        className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 rounded-full px-4 py-2 text-primary-foreground/75 animate-fade-in transition-colors hover:text-primary-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-foreground/70"
+        className="absolute bottom-6 left-1/2 z-20 -translate-x-1/2 flex flex-col items-center gap-1 rounded-full px-4 py-2 text-primary-foreground/75 animate-fade-in transition-colors hover:text-primary-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-foreground/70"
       >
         <span className="font-body text-xs">{"Ver servi\u00e7os"}</span>
         <ChevronDown className="h-5 w-5 animate-bounce" />
-      </Link>
+      </a>
     </section>
   );
 };

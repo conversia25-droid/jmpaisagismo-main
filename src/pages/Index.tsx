@@ -29,7 +29,7 @@ const Index = () => {
       <HeroSection />
       <HomeShowcase />
 
-      <section className="py-20 md:py-28 bg-background dot-pattern">
+      <section id="servicos" className="scroll-mt-24 py-20 md:py-28 bg-background dot-pattern">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-2xl mx-auto mb-14">
             <span className="inline-flex items-center gap-2 rounded-full bg-secondary px-4 py-1.5 font-body text-xs font-semibold uppercase tracking-widest text-primary">

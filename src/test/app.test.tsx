@@ -17,7 +17,7 @@ describe("JM Paisagismo site", () => {
     ).toBeInTheDocument();
     expect(screen.getByRole("link", { name: /solicitar orçamento/i })).toBeInTheDocument();
     const servicesLink = screen.getByRole("link", { name: /ver servi/i });
-    expect(servicesLink).toHaveAttribute("href", "/servicos");
+    expect(servicesLink).toHaveAttribute("href", "#servicos");
     expect(screen.getByRole("heading", { name: /fotos reais passando pela tela/i })).toBeInTheDocument();
   });
 
