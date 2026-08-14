@@ -1,6 +1,6 @@
 import { FormEvent, useState } from "react";
 import { CheckCircle2, Clock, Instagram, Mail, MessageCircle, Phone } from "lucide-react";
-import { company, createContactFormWhatsAppUrl, createWhatsAppUrl } from "@/lib/company";
+import { company, createWhatsAppUrl } from "@/lib/company";
 
 type ContactItem = {
   icon: typeof Phone;
@@ -94,7 +94,7 @@ const ContactSection = () => {
       .filter((line): line is string => line !== null)
       .join("\r\n");
 
-    window.open(createContactFormWhatsAppUrl(whatsappMessage), "_blank", "noopener,noreferrer");
+    window.open(createWhatsAppUrl(whatsappMessage), "_blank", "noopener,noreferrer");
     setStatus({
       type: "success",
       text: "Mensagem preparada. Confirme o envio na janela do WhatsApp.",
@@ -200,18 +200,13 @@ const ContactSection = () => {
               </div>
             )}
 
-            <div className="space-y-2">
-              <button
-                type="submit"
-                className="w-full inline-flex items-center justify-center gap-2 rounded-full gradient-primary px-6 py-3.5 font-body font-semibold text-primary-foreground glow-shadow hover:opacity-95 transition-opacity"
-              >
-                <MessageCircle className="h-4 w-4" />
-                Enviar pelo WhatsApp
-              </button>
-              <p className="text-center font-body text-xs text-muted-foreground/70">
-                Envio de teste: {company.formWhatsappDisplay}
-              </p>
-            </div>
+            <button
+              type="submit"
+              className="w-full inline-flex items-center justify-center gap-2 rounded-full gradient-primary px-6 py-3.5 font-body font-semibold text-primary-foreground glow-shadow hover:opacity-95 transition-opacity"
+            >
+              <MessageCircle className="h-4 w-4" />
+              Enviar pelo WhatsApp
+            </button>
           </form>
         </div>
       </div>

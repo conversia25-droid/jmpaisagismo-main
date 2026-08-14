@@ -85,8 +85,7 @@ describe("JM Paisagismo site", () => {
     const [url] = open.mock.calls[0];
     const decodedUrl = decodeURIComponent(String(url));
 
-    expect(screen.getByText("Envio de teste: (31) 99128-4490")).toBeInTheDocument();
-    expect(decodedUrl).toContain("https://wa.me/5531991284490");
+    expect(decodedUrl).toContain("https://wa.me/5531990635460");
     expect(decodedUrl).toContain("Olá, gostaria de solicitar um orçamento.\r\n\r\nNome: Maria Silva");
     expect(decodedUrl).toContain("\r\nTelefone: (31) 98888-7777");
     expect(decodedUrl).toContain("\r\nE-mail: maria@email.com");
