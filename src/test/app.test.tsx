@@ -33,6 +33,20 @@ describe("JM Paisagismo site", () => {
     );
   });
 
+  it("navigates portfolio lightbox photos within the active service", () => {
+    window.history.pushState({}, "", "/portfolio?servico=irrigacao");
+
+    render(<App />);
+
+    fireEvent.click(screen.getAllByRole("button", { name: /ampliar foto/i })[0]);
+    expect(screen.getByText(/1 de 8/i)).toBeInTheDocument();
+
+    fireEvent.click(screen.getByRole("button", { name: /pr.xima foto/i }));
+    expect(screen.getByText(/2 de 8/i)).toBeInTheDocument();
+
+    fireEvent.click(screen.getByRole("button", { name: /foto anterior/i }));
+    expect(screen.getByText(/1 de 8/i)).toBeInTheDocument();
+  });
   it("opens the contact phone card in WhatsApp", () => {
     window.history.pushState({}, "", "/contato");
 
@@ -67,5 +81,3 @@ describe("JM Paisagismo site", () => {
     expect(screen.getByText(/mensagem preparada/i)).toBeInTheDocument();
   });
 });
-
-

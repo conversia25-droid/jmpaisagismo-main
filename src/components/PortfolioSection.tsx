@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
-import { MapPin, X, ZoomIn } from "lucide-react";
+import { ChevronLeft, ChevronRight, MapPin, X, ZoomIn } from "lucide-react";
 
 import { clientHighlights } from "@/data/clientHighlights";
 import {
@@ -21,6 +21,11 @@ type LightboxItem = {
   location: string;
 };
 
+type LightboxState = {
+  items: LightboxItem[];
+  index: number;
+};
+
 const filterOptions: readonly { id: PortfolioFilter; label: string }[] = [
   { id: "todos", label: "Todos" },
   ...serviceFilters,
@@ -31,13 +36,47 @@ const isPortfolioCategory = (value: string | null): value is PortfolioCategory =
 
 const PortfolioSection = () => {
   const [searchParams, setSearchParams] = useSearchParams();
-  const [lightbox, setLightbox] = useState<LightboxItem | null>(null);
+  const [lightbox, setLightbox] = useState<LightboxState | null>(null);
 
   const currentService = searchParams.get("servico");
   const active: PortfolioFilter = isPortfolioCategory(currentService) ? currentService : "todos";
 
   const filtered =
     active === "todos" ? portfolioItems : portfolioItems.filter((project) => project.category === active);
+
+  const portfolioLightboxItems: LightboxItem[] = filtered.map((project) => ({
+    image: project.image,
+    title: project.title,
+    alt: project.alt,
+    eyebrow: project.service,
+    client: project.client,
+    location: project.location,
+  }));
+
+  const clientLightboxItems: LightboxItem[] = clientHighlights.map((photo) => ({
+    image: photo.image,
+    title: photo.title,
+    alt: photo.alt,
+    eyebrow: "Cliente em destaque",
+    client: photo.client,
+    location: photo.location,
+  }));
+
+  const currentLightbox = lightbox?.items[lightbox.index] ?? null;
+  const canNavigateLightbox = Boolean(lightbox && lightbox.items.length > 1);
+
+  const showLightboxItem = useCallback((direction: -1 | 1) => {
+    setLightbox((current) => {
+      if (!current || current.items.length < 2) {
+        return current;
+      }
+
+      return {
+        ...current,
+        index: (current.index + direction + current.items.length) % current.items.length,
+      };
+    });
+  }, []);
 
   const handleFilter = (category: PortfolioFilter) => {
     const nextParams = new URLSearchParams(searchParams);
@@ -50,6 +89,30 @@ const PortfolioSection = () => {
 
     setSearchParams(nextParams, { preventScrollReset: true });
   };
+
+  useEffect(() => {
+    if (!lightbox) {
+      return undefined;
+    }
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setLightbox(null);
+      }
+
+      if (event.key === "ArrowLeft") {
+        showLightboxItem(-1);
+      }
+
+      if (event.key === "ArrowRight") {
+        showLightboxItem(1);
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [lightbox, showLightboxItem]);
 
   return (
     <section id="portfolio" className="scroll-mt-24 py-20 md:py-28 section-gradient dot-pattern">
@@ -84,20 +147,11 @@ const PortfolioSection = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filtered.map((project) => (
+          {filtered.map((project, index) => (
             <button
               key={project.image}
               type="button"
-              onClick={() =>
-                setLightbox({
-                  image: project.image,
-                  title: project.title,
-                  alt: project.alt,
-                  eyebrow: project.service,
-                  client: project.client,
-                  location: project.location,
-                })
-              }
+              onClick={() => setLightbox({ items: portfolioLightboxItems, index })}
               className="group relative rounded-3xl overflow-hidden aspect-[4/3] card-shadow hover:card-hover-shadow hover:-translate-y-1 transition-all duration-300 text-left"
               aria-label={`Ampliar foto: ${project.title}`}
             >
@@ -151,20 +205,11 @@ const PortfolioSection = () => {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            {clientHighlights.map((photo) => (
+            {clientHighlights.map((photo, index) => (
               <button
                 key={photo.image}
                 type="button"
-                onClick={() =>
-                  setLightbox({
-                    image: photo.image,
-                    title: photo.title,
-                    alt: photo.alt,
-                    eyebrow: "Cliente em destaque",
-                    client: photo.client,
-                    location: photo.location,
-                  })
-                }
+                onClick={() => setLightbox({ items: clientLightboxItems, index })}
                 className="group relative overflow-hidden rounded-3xl aspect-[4/3] card-shadow hover:card-hover-shadow hover:-translate-y-1 transition-all duration-300 text-left"
                 aria-label={`Ampliar foto do cliente ${photo.client}`}
               >
@@ -192,7 +237,7 @@ const PortfolioSection = () => {
         </div>
       </div>
 
-      {lightbox && (
+      {currentLightbox && lightbox && (
         <div
           className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4 animate-fade-in"
           onClick={() => setLightbox(null)}
@@ -200,25 +245,58 @@ const PortfolioSection = () => {
           <button
             type="button"
             onClick={() => setLightbox(null)}
-            className="absolute top-4 right-4 text-primary-foreground/80 hover:text-primary-foreground transition-colors z-10"
+            className="absolute top-4 right-4 text-primary-foreground/80 hover:text-primary-foreground transition-colors z-20"
             aria-label="Fechar"
           >
             <X className="h-8 w-8" />
           </button>
+
+          {canNavigateLightbox && (
+            <>
+              <button
+                type="button"
+                onClick={(event) => {
+                  event.stopPropagation();
+                  showLightboxItem(-1);
+                }}
+                className="absolute left-3 sm:left-6 top-1/2 z-20 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full bg-background/90 text-primary shadow-lg transition-colors hover:bg-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-foreground/80"
+                aria-label="Foto anterior"
+              >
+                <ChevronLeft className="h-7 w-7" />
+              </button>
+              <button
+                type="button"
+                onClick={(event) => {
+                  event.stopPropagation();
+                  showLightboxItem(1);
+                }}
+                className="absolute right-3 sm:right-6 top-1/2 z-20 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full bg-background/90 text-primary shadow-lg transition-colors hover:bg-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-foreground/80"
+                aria-label="Próxima foto"
+              >
+                <ChevronRight className="h-7 w-7" />
+              </button>
+            </>
+          )}
+
           <div className="max-w-5xl w-full animate-scale-in" onClick={(event) => event.stopPropagation()}>
             <img
-              src={publicPath(lightbox.image)}
-              alt={lightbox.alt}
+              src={publicPath(currentLightbox.image)}
+              alt={currentLightbox.alt}
               className="w-full h-auto max-h-[80vh] object-contain rounded-lg"
             />
             <div className="text-center mt-4">
+              {canNavigateLightbox && (
+                <p className="font-body text-xs font-semibold text-primary-foreground/60 mb-2">
+                  {lightbox.index + 1} de {lightbox.items.length}
+                </p>
+              )}
               <span className="text-xs font-body font-semibold uppercase tracking-wider text-accent">
-                {lightbox.eyebrow}
+                {currentLightbox.eyebrow}
               </span>
-              <p className="text-primary-foreground font-display text-xl mt-1">{lightbox.title}</p>
+              <p className="text-primary-foreground font-display text-xl mt-1">{currentLightbox.title}</p>
               <p className="inline-flex items-center justify-center gap-1.5 text-primary-foreground/70 font-body text-sm mt-1">
                 <MapPin className="h-4 w-4" />
-                {lightbox.client} · {lightbox.location}
+                {currentLightbox.client} · {currentLightbox.location}
               </p>
             </div>
           </div>
