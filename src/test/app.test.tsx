@@ -66,6 +66,7 @@ describe("JM Paisagismo site", () => {
 
     const emailCard = screen.getByRole("link", { name: /e-mail/i });
     expect(emailCard).toHaveAttribute("href", "mailto:contato@jmpaisagismo.com.br");
+    expect(screen.getByText("Seg a Sex, 7h às 17h")).toBeInTheDocument();
   });
   it("prepares a WhatsApp message from the contact form", () => {
     window.history.pushState({}, "", "/contato");
@@ -90,6 +91,7 @@ describe("JM Paisagismo site", () => {
     expect(decodedUrl).toContain("\r\nTelefone: (31) 98888-7777");
     expect(decodedUrl).toContain("\r\nE-mail: maria@email.com");
     expect(decodedUrl).toContain("\r\n\r\nPedido:\r\nPreciso de manutenção de jardim");
-    expect(screen.getByText(/mensagem preparada/i)).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: /solicitação recebida/i })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: /recebemos sua solicitação/i })).toBeInTheDocument();
   });
 });

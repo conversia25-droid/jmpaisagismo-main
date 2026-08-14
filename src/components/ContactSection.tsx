@@ -1,4 +1,5 @@
 import { FormEvent, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { CheckCircle2, Clock, Instagram, Mail, MessageCircle, Phone } from "lucide-react";
 import { company, createWhatsAppUrl } from "@/lib/company";
 
@@ -19,7 +20,7 @@ const contactItems: ContactItem[] = [
     external: true,
   },
   { icon: Mail, label: "E-mail", value: company.email, href: `mailto:${company.email}` },
-  { icon: Clock, label: "Atendimento", value: "Seg a Sex, 8h às 18h" },
+  { icon: Clock, label: "Atendimento", value: "Seg a Sex, 7h às 17h" },
 ];
 
 const initialForm = {
@@ -62,6 +63,7 @@ const ContactCard = ({ item }: { item: ContactItem }) => {
 };
 
 const ContactSection = () => {
+  const navigate = useNavigate();
   const [form, setForm] = useState(initialForm);
   const [status, setStatus] = useState<{ type: "success" | "error"; text: string } | null>(null);
 
@@ -95,10 +97,8 @@ const ContactSection = () => {
       .join("\r\n");
 
     window.open(createWhatsAppUrl(whatsappMessage), "_blank", "noopener,noreferrer");
-    setStatus({
-      type: "success",
-      text: "Mensagem preparada. Confirme o envio na janela do WhatsApp.",
-    });
+    setForm(initialForm);
+    navigate("/obrigado");
   };
 
   return (
